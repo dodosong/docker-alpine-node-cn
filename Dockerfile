@@ -19,7 +19,7 @@ RUN  set -ex \
   && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
   && echo "Asia/Shanghai" > /etc/timezone \
   && apk del tzdata \
-  && rm -rf /var/cache/apk/* /tmp/* /var/tmp/* $HOME/.cache ## 清除缓存
+  && rm -rf /var/cache/apk/* /tmp/* /var/tmp/* $HOME/.cache
 
 ## Configure it
 VOLUME ["/data/code"]
